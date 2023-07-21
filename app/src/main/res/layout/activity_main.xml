@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="CLICK BUTTON TO ADD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/count_btn"
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="36dp"
+            android:text="ADD"
+            app:layout_constraintEnd_toEndOf="@+id/count_value"
+            app:layout_constraintStart_toStartOf="@+id/count_value"
+            app:layout_constraintTop_toBottomOf="@+id/count_value" />
+
+        <TextView
+            android:id="@+id/count_value"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_instructions"
+            app:layout_constraintStart_toStartOf="@+id/tv_instructions"
+            app:layout_constraintTop_toBottomOf="@+id/tv_instructions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
